@@ -1,0 +1,22 @@
+[
+  {
+    "name": "default",
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "",
+    "database": "cadastro-sigap",
+    "entities": [
+      "./src/modules/**/infra/typeorm/entities/*.ts",
+      "./dist/modules/**/infra/typeorm/entities/*.js"
+    ],
+    "migrations": [
+      "./src/shared/infra/typeorm/migrations/*.ts",
+      "./dist/modules/**/infra/typeorm/migrations/*.js"
+    ],
+    "cli": {
+      "migrationsDir": "./src/shared/infra/typeorm/migrations"
+    }
+  }
+]
